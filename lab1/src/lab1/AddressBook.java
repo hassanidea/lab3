@@ -27,7 +27,7 @@ public class AddressBook {
 		
 		
 		System.out.println("Address Book");
-		
+		System.out.println("yes");
 		
 	}
 
