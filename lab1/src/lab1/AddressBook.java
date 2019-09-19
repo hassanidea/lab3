@@ -13,12 +13,12 @@ public class AddressBook {
 	
 	
 	
-	public void addBuddy(){
-		
+	public void addBuddy(BuddyInfo bi){
+		this.buddyInfos.add(bi);
 	}
 	
-	public void removeBuddy(){
-		
+	public void removeBuddy(int index){
+		this.buddyInfos.remove(index);
 	}
 	
 	
@@ -28,6 +28,15 @@ public class AddressBook {
 		
 		System.out.println("Address Book");
 		System.out.println("yes");
+		
+		AddressBook ab = new AddressBook();
+		
+		BuddyInfo bi = new BuddyInfo("Hassan","Hassan", 12345678);
+		
+		ab.addBuddy(bi);
+		
+		ab.removeBuddy(0);
+		
 		
 	}
 
